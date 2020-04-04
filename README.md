@@ -27,7 +27,7 @@ git clone  https://github.com/kcsuraj/typecript-node-starter.git <project_name>
 
 ```
 cd <project_name>
-yarn
+npm install
 ```
 
 ## Development
@@ -36,8 +36,8 @@ yarn
 | ------------- | ---------------------------------------------------------------------- |
 | `dev`         | Start app in development mode                                          |
 | `build`       | Run build tasks                                                        |
-| `serve`       | Runs node on `dist/server.js`                                          |
-| `watch-node`  | Runs nodemon to restart server when crash                              |
+| `serve`       | Run node on `dist/server.js`                                           |
+| `watch-node`  | Run nodemon to restart server when crash                               |
 | `build-ts`    | Compile all source `.ts` files to `.js` files in the `dist` folder     |
 | `watch-ts`    | Build by watching `ts` file s                                          |
 | `tslint`      | Run TSLint on project                                                  |
