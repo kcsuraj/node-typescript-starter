@@ -1,0 +1,3 @@
+{
+  "src/**/*.{ts,js,md}": ["prettier --single-quote --write", "tslint --fix --project tsconfig.json"]
+}
