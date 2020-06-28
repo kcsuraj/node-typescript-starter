@@ -32,19 +32,18 @@ npm install
 
 ## Development
 
-| Npm Script    | Description                                                            |
-| ------------- | ---------------------------------------------------------------------- |
-| `dev`         | Start app in development mode                                          |
-| `build`       | Run build tasks                                                        |
-| `serve`       | Run node on `dist/server.js`                                           |
-| `watch-node`  | Run nodemon to restart server when crash                               |
-| `build-ts`    | Compile all source `.ts` files to `.js` files in the `dist` folder     |
-| `watch-ts`    | Build by watching `ts` file s                                          |
-| `tslint`      | Run TSLint on project                                                  |
-| `tslint:fix`  | Run TSLint on project and automatically fix errors using `tslint.json` |
-| `prettier`    | Format files using `.prettierrc.json``                                 |
-| `serve-debug` | Run the app with the --inspect flag                                    |
+| Npm Script   | Description                                                            |
+| ------------ | ---------------------------------------------------------------------- |
+| `start`      | Run app in development mode and with auto reload onf file changes      |
+| `build`      | Build files for production mode                                        |
+| `build-ts`   | Compile all source `.ts` files to `.js` files in the `dist` folder     |
+| `watch-ts`   | Build by watching `ts` file s                                          |
+| `tslint`     | Run TSLint on project                                                  |
+| `tslint:fix` | Run TSLint on project and automatically fix errors using `tslint.json` |
+| `prettier`   | Format files using `.prettierrc.json``                                 |
 
 ## Reference links
 
 - [Microsoft TypeScript Node Starter](https://github.com/microsoft/TypeScript-Node-Starter)
+
+- [Crate](https://github.com/atulmy/crate)
