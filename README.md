@@ -8,6 +8,7 @@ This project can be used as a starting point for your next node project.
 - Prettier
 - TsLint
 - Husky
+- Docker
 
 ### Pre-requisites
 
@@ -41,6 +42,12 @@ npm install
 | `tslint`     | Run TSLint on project                                                  |
 | `tslint:fix` | Run TSLint on project and automatically fix errors using `tslint.json` |
 | `prettier`   | Format files using `.prettierrc.json``                                 |
+
+## Development with docker
+
+```bash
+docker-compose up
+```
 
 ## Reference links
 
