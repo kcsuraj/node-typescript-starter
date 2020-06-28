@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/home/node/code
+      - /home/node/code/node_modules
+    links:
+      - db
+    environment:
+      DB_URI: mongodb://db:27017
+  db:
+    image: mongo:3
