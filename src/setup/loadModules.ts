@@ -3,7 +3,6 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
-import { AppError } from '../errors';
 
 export default function (app: Application) {
   console.info('Setting up modules');
