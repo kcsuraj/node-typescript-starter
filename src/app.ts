@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import { setupLoadModules, setupDatabase, setupServer } from './setup';
+import { setupLoadModules, setupDatabase, setupServer, setupErrorHandler } from './setup';
 
 // Create Express server
 const app: Application = express();
@@ -9,6 +9,9 @@ setupLoadModules(app);
 
 // Setup database
 setupDatabase();
+
+// Setup error handlers
+setupErrorHandler(app);
 
 // Setup server
 setupServer(app);
