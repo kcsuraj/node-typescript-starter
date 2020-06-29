@@ -2,6 +2,8 @@ import { Application } from 'express';
 import { isTrustedError, errorMiddleware, notFoundHandler } from '../middlewares/errors';
 
 export default function (app: Application) {
+  console.log('Setting up error handlers');
+
   // error handler middlewares
   app.use(errorMiddleware);
   app.use(notFoundHandler);

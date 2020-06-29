@@ -1,12 +1,10 @@
-import HttpStatusCode from '../config/httpStatusCode';
-
 class AppError extends Error {
   public readonly name: string;
-  public readonly httpCode: HttpStatusCode;
+  public readonly httpCode: number;
   public readonly isOperational: boolean;
   public readonly description: string;
 
-  constructor(name: string, httpCode: HttpStatusCode, isOperational: boolean, description: string) {
+  constructor(name: string, httpCode: number, isOperational: boolean, description: string) {
     super(description);
 
     /**

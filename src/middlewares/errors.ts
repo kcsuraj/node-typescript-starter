@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import HttpStatus from 'http-status-codes';
-import AppError from '../errors/appError';
+import AppError from '../app/services/errorService';
 
 function isTrustedError(err: Error) {
   if (err instanceof AppError) {
