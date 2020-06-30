@@ -1,9 +1,37 @@
 import HttpStatus from 'http-status-codes';
 
+/** This class provides custom error handling service that helps throw HTTP errors using defined structure.
+ * It also enlists helper classes that can be used to throw errors in common error case scenarios
+ */
+
 class HttpError extends Error {
+  /**
+   * name of error message
+   *
+   * @type {string}
+   * @memberof HttpError
+   */
   public readonly name: string;
+  /**
+   * Http status code of error
+   *
+   * @type {string}
+   * @memberof HttpError
+   */
   public readonly httpCode: number;
+  /**
+   * Flag if it is runtime error and should be handled properly
+   *
+   * @type {string}
+   * @memberof HttpError
+   */
   public readonly isOperational: boolean;
+  /**
+   * More informatin about the error
+   *
+   * @type {string}
+   * @memberof HttpError
+   */
   public readonly description: string;
 
   constructor(name: string, httpCode: number, isOperational: boolean, description: string) {

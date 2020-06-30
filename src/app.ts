@@ -1,3 +1,6 @@
+/**
+ * Entry point to the application
+ */
 import express, { Application } from 'express';
 import { setupLoadModules, setupDatabase, setupServer, setupErrorHandler } from './setup';
 

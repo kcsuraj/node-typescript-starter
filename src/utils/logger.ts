@@ -1,3 +1,7 @@
+/** This util Implements custom logger using winston library. It provides way to log errors in console and
+ * write log messages in log files in production environment
+ */
+
 import winston from 'winston';
 
 const options = {

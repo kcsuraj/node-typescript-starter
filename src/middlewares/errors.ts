@@ -1,3 +1,5 @@
+/** Custom error handling middlewares for use in express with helper error utils  */
+
 import { Request, Response, NextFunction } from 'express';
 import HttpStatus from 'http-status-codes';
 import HttpError from '../app/services/errorService';

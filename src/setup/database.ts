@@ -3,6 +3,9 @@ import env from '../config/env';
 
 const { db } = env;
 
+/**
+ * Connect to database
+ */
 export default function () {
   mongoose.connect(`${db.uri}/${db.name}`, { useNewUrlParser: true, useUnifiedTopology: true });
 
