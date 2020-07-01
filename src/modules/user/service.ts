@@ -1,6 +1,5 @@
-import { IUser } from '../models';
-import { userModel } from '../models';
-import MongooseService from './mongooseService';
+import userModel, { IUser } from './model';
+import { MongooseService } from '../../services';
 
 const mongoseService = new MongooseService(userModel);
 

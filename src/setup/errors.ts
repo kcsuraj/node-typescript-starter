@@ -18,7 +18,7 @@ export default function (app: Application) {
   });
 
   // Handle uncaught exceptions
-  process.on('uncaughtException', (error) => {
+  process.on('uncaughtException', (error: any) => {
     if (!isTrustedError(error)) {
       process.exit(1);
     }

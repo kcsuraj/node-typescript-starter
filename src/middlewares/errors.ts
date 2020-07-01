@@ -2,9 +2,9 @@
 
 import { Request, Response, NextFunction } from 'express';
 import HttpStatus from 'http-status-codes';
-import HttpError from '../app/services/errorService';
+import HttpError from '../services/errorService';
 
-function isTrustedError(err: Error) {
+function isTrustedError(err: HttpError) {
   if (err instanceof HttpError) {
     return err.isOperational;
   }
