@@ -52,9 +52,3 @@ npm install
 ```bash
 docker-compose up
 ```
-
-## Reference links
-
-- [Microsoft TypeScript Node Starter](https://github.com/microsoft/TypeScript-Node-Starter)
-
-- [Crate](https://github.com/atulmy/crate)
