@@ -45,7 +45,7 @@ npm install
 | `watch-ts`   | Build by watching `ts` file s                                          |
 | `tslint`     | Run TSLint on project                                                  |
 | `tslint:fix` | Run TSLint on project and automatically fix errors using `tslint.json` |
-| `prettier`   | Format files using `.prettierrc.json``                                 |
+| `prettier`   | Format files using `.prettierrc.json`                                  |
 
 ## Development with docker
 
