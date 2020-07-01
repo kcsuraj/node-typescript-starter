@@ -1,5 +1,5 @@
 import { Application, Router } from 'express';
-import routes from '../app/routes/baseRoutes';
+import routes from '../routes';
 
 /**
  * Setup error handlers in express
