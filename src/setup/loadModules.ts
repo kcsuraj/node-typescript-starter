@@ -3,13 +3,14 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
+import { logger } from '../utils/logger';
 
 /**
  *  Express configurations
  * @param {Application} app
  */
 export default function (app: Application) {
-  console.info('Setting up modules');
+  logger.info('Setting up modules');
 
   // Enable cors
   app.use(cors());

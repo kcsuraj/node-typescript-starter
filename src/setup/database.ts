@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import env from '../config/env';
+import { logger } from '../utils/logger';
 
 const { db } = env;
 
@@ -13,8 +14,10 @@ export default function () {
 
   const connection = mongoose.connection;
 
-  connection.on('error', console.error.bind(console, 'connection error:'));
+  connection.on('error', () => {
+    logger.error('Database connection error');
+  });
   connection.once('open', () => {
-    console.log('Database Connected');
+    logger.info('Database Connected');
   });
 }
