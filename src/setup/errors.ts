@@ -1,12 +1,13 @@
 import { Application } from 'express';
 import { isTrustedError, errorMiddleware, notFoundHandler } from '../middlewares/errors';
+import { logger } from '../utils/logger';
 
 /**
  * Setup error handlers in express
  * @param {Application} app
  */
 export default function (app: Application) {
-  console.log('Setting up error handlers');
+  logger.info('Setting up error handlers');
 
   // error handler middlewares
   app.use(errorMiddleware);
@@ -19,6 +20,8 @@ export default function (app: Application) {
 
   // Handle uncaught exceptions
   process.on('uncaughtException', (error: any) => {
+    logger.error(error.message);
+
     if (!isTrustedError(error)) {
       process.exit(1);
     }
